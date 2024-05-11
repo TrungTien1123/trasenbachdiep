@@ -1,0 +1,24 @@
+.loading-container{
+width: fit-content;
+margin:auto;
+}
+.loading-container.showing{
+    background-color: #fff;
+    opacity: 0.4;
+}
+.loading-content{
+    position:absolute;
+    top:10%;
+    left:50%;
+    transform: translate(-50%,0);
+    
+}
+.loading-content img{
+width: 320px;
+height: 210px;
+}
+.loading-content h4{
+    text-align: center;
+    color: rgba(0,0,0,.5);
+    margin-top: -3rem;
+}

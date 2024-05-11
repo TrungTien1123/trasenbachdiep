@@ -1,0 +1,30 @@
+.title{
+    font-size: 2.67rem;
+}
+.post{
+    width: 30%;
+    text-align: justify;
+}
+.post-title{
+    font-size: 1.5rem;
+    color: rgb(42, 105, 33);
+    text-decoration: none;
+}
+
+.news-content{
+    background-image: 
+    url('../../images/Layout/background.png');
+    background-repeat: no-repeat;
+    background-size:auto;
+}
+.list-pages{
+    width: 12%;
+}
+.pages{
+    border: 2px solid #000;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+.pages:active {
+    border: 2px solid rgb(46, 209, 68);
+}

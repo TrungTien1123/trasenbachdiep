@@ -1,0 +1,14 @@
+.active_account{
+    margin: 300px auto;
+    width: 1000px;
+    text-align: center;
+}
+.active_account h3{
+    color: #ab4;
+    font-weight: bold;
+    font-size: 3rem;
+}
+.active_account h4{
+    color: rgba(0,0,0,.5);
+    padding-bottom: 30px;
+}

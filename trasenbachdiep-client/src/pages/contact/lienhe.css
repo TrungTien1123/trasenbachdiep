@@ -1,0 +1,31 @@
+.contact-form h1{
+    font-size: 1.67rem;
+    font-family: 'SVNAthena';
+}
+.infor{
+    border: 2px solid rgb(39, 128, 39);
+    padding: 3pt;
+    height: 3rem;
+    width: 29.5rem;
+}
+.contact-field.btn-submit{
+    background-color: rgb(39, 128, 39);
+    height: 3rem;
+    width: 7rem;
+    color: #fff;
+    font-size: 1.2rem;
+}
+.contact-content{
+    background-image: url(../../images/Lienhe/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 10rem;
+    width: 100%;
+}
+
+.contact-field{
+    padding-left: 60%;
+    padding-top: 10%;
+    padding-right:10%;
+    width: 100%;
+}

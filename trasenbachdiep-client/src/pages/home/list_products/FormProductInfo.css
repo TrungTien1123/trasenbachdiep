@@ -1,0 +1,38 @@
+.form-product-info {
+    width: 500px;
+    margin: auto;
+    border: 1px solid rgba(0, 0, 0, .15);
+    padding: 30px 60px;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgb(0 0 0  / 14%);
+    position: relative;
+}
+
+.icon-close {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    cursor: pointer;
+}
+
+.form-title h3 {
+    text-align: center;
+}
+
+.form-product-info .btn-submit {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.form-product-info .btn-submit button {
+    background: transparent;
+    border: 1px solid #ab4;
+    outline: none;
+    padding: 5px 8px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.form-product-info .btn-submit button:hover {
+    color: orange;
+}

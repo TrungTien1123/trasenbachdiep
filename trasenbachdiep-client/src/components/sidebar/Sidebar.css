@@ -1,0 +1,17 @@
+.sidebar {
+    width: 16rem;
+    height: 100vh;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: transform .3s ease-in-out;
+    box-shadow: 6px 1px 7px 1px rgba(0,0,0,0.62);
+}
+.sidebar-menu{
+    background-color: #fff;
+}
+
+.sidebar.close{
+    transform: translate(-16rem,0);
+}

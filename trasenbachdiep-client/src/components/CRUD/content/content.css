@@ -1,0 +1,29 @@
+#vehicle-table {
+    cursor: pointer;
+}
+
+#vehicle-table tr {
+    transition: 0.25s;
+    vertical-align: middle;
+    text-align: center;
+}
+
+#vehicle-table td {
+    text-align: center;
+}
+
+#vehicle-table th {
+    white-space: nowrap;
+}
+
+#vehicle-table-wrapper {
+    min-height: 128px;
+    max-width: 1000px;
+    max-height: 500px;
+    overflow-y: scroll;
+}
+
+.selected {
+    color: white;
+    background-color: #7bed9f;
+}

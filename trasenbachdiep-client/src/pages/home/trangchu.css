@@ -1,0 +1,189 @@
+.title{
+    font-size: 2.67rem;
+    font-weight: bold
+}
+.carousel-indicators{
+    margin-bottom: -3rem;
+}
+.carousel-indicators [data-bs-target] {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 100%;
+    border: 3px solid #aabc44;
+  }
+.carousel-indicators .active {
+    background-color:#aabc44 ;
+  }
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: #ab4;
+    border-radius: 100%;
+    opacity: .8;
+}
+.carousel-caption{
+    top: 15%;
+    left: 18%;
+    width: 35%;
+}
+.carousel-caption p{
+    width: 70%;
+    font-size: 1.2rem;
+    text-align: justify;
+}
+.carousel-item {
+    height: 546px
+}
+.carousel-item h5{
+    font-size: 2rem;
+    color: #000;
+    font-family: 'SVNAthena';
+}
+.carousel-item h4, .intro-caption h1{
+    font-size: 6rem;
+    color: #43782b;
+    font-family: 'SVNArtfulbeauty';
+    height: 5.5rem;
+}
+.carousel-item .btn, .intro-caption .btn{
+    background-color: #aabc44;
+    width: 11rem;
+    left: 0%;
+}
+.carousel-item .btn a, .intro-caption .btn a{
+    color: #000;
+    font-size: 1.5rem;
+    font-weight: bold;
+    box-sizing: content-box;
+    text-decoration: none;
+}  
+.signature .product{
+    width: 22%;
+}
+.product h5{
+    font-size: 1.5rem;
+}
+.btn-left{
+    width: 2rem;
+    height: 2rem;
+    top: 50%;
+    right: 105%;
+}
+.btn-right{
+    width: 2rem;
+    height: 2rem;
+    top: 50%;
+    left: 105%;
+}
+.list-product-back{
+    height: 8.6rem;
+    width: 7.2rem;
+    top: 0%;
+    left: 105%;
+}
+.signature{
+    z-index: 10;
+}
+.introduction{
+    transform: translate(0px,-6rem);
+    z-index: 1;
+    background-image: 
+    url(../../images/trangchu/introduction-back.png);
+    background-size: cover;
+    height: 60rem;
+}
+.intro-title{
+    padding-top: 16%;
+}
+.intro-infor{
+    width: 30rem;
+    text-align: justify;
+    font-size: 1.2REM;
+}
+.intro-caption{
+    padding-top: 10%;
+    padding-left: 20%;
+}
+.contact{
+    height: 4rem;
+    top: 35%;
+    right: 0%;
+}
+.phone{
+    width: 5rem;
+    background-image: 
+    url('../../images/trangchu/phoneback.png');
+    background-repeat: no-repeat;
+    background-size: contain
+}
+.phone img{
+    width: 30%;
+    margin-top: 1.25rem;
+    margin-left: 1.5rem;
+}
+.phone-number{
+    width: 12rem;
+    background-image: 
+    url('../../images/trangchu/phonenumberback.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-left: -2rem;
+    transform: translate(-2.5rem, 0px);
+    z-index: -2;
+}
+.phone-number h4{
+    font-weight:  bold;
+    padding-top: 0.5rem;
+    text-align: center;
+    color:#aabc44;
+}
+.person{
+    width: 18%;
+}
+.person p{
+    font-weight: 500;
+}
+.about-us{
+    background-image: 
+    url('../../images/trangchu/banner03left.png');
+    background-position:0 50px ;
+    background-size: 400px ;
+    background-repeat: no-repeat;
+    height: 33rem;
+    z-index: 5;
+    margin-top: -10rem;
+}
+.buy{
+    z-index: 10;
+    transform: translate(0px,-1rem);
+    background-image:
+    url('../../images/trangchu/banner03right.png'),
+    url('../../images/trangchu/lastback.png');
+    background-repeat: no-repeat;
+    background-position:100% -5rem, 50% 80% ;
+    height: 28rem;
+}
+.buy .form{
+    width: 50%;
+    padding: 0%;
+}
+.buy .form input{
+    width: 45.5rem ;
+    height: 3.5rem;
+    border: 2px solid #aabc44 ;
+    font-size: 1.5rem;
+    padding: 0.25rem 1.5rem;
+}
+.buy .form .btn{
+    background-color: #aabc44;
+    width: 12rem;
+    font-size: 1.5rem;
+    height: 3.5rem;
+    padding: 0.5rem;
+}
+@font-face {
+    font-family: 'SVNAthena';
+    src: url('../../fonts/SVN-Athena_0.ttf');
+  }
+  @font-face {
+    font-family: 'SVNArtfulbeauty';
+    src: url('../../fonts/SVN-Artful\ Beauty.ttf');
+  }

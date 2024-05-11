@@ -1,0 +1,11 @@
+.wrapper {
+    /* height: 200vh; */
+    margin-left: 16rem;
+    /* border: 1px solid red; */
+    transition: margin .3s ease-in-out;
+
+}
+
+.wrapper.sidebar-close{
+    margin-left: 0;
+}

@@ -1,0 +1,56 @@
+server:
+  port: 8888
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/trasenbachdiep
+    username: root
+    password:
+  # -----------------------
+  # Show sql
+  # -----------------------
+  jpa:
+    show-sql: true
+    database: mysql
+    properties:
+      hibernate.show_sql: true
+      hibernate.format_sql: false
+      hibernate.highlight_sql: true
+    hibernate:
+      ddl-auto: update
+  mvc:
+    throw-exception-if-no-ha ndler-found: true
+    static-path-pattern: /swagger*
+  # -----------------------
+  # Paging
+  # -----------------------
+  data:
+    web:
+      pageable:
+        one-indexed-parameters: true
+        default-page-size: 10
+        page-parameter : pageNumber
+        size-parameter: size
+      sort:
+        sort-parameter: sort
+
+
+  # ---------------------
+  # Email
+  # ---------------------
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: trungtien112003@gmail.com
+    password: wwid gidj ymzu aimd
+    properties.mail.smtp:
+        auth: true
+        starttls.enable: true
+        ssl.trust: smtp.gmail.com
+  # ---------------------
+  # JWT Secret
+  # ---------------------
+    security:
+      jwt:
+        secret: vtt1123
+        expire-length: 7200000
+

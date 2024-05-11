@@ -1,0 +1,120 @@
+.sidebar {
+    width: 16rem;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #87874b;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    transition: transform 350ms cubic-bezier(0.165, 0.84, 0.44, 1) 0ms;
+}
+
+.sidebar.close { 
+    transform: translate(-16rem, 0);
+}
+
+.sidebar-header {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+}
+
+.sidebar-header h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #ececec;
+    margin-left: 1.5rem;
+    line-height: 1.5rem;
+}
+
+.sidebar-header img {
+    margin-left: 20px;
+    width: 50px;
+    height: 50px;
+    animation: logo-spin infinite 20s linear;
+}
+
+@keyframes logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.sidebar-menu {
+    background-color: #F1F1E7;
+    flex: 1;
+}
+
+.dashboard {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 48px;
+    /* border: 1px solid red; */
+    cursor: pointer;
+}
+
+.dashboard:hover {
+    background-color: #87874b;
+}
+
+.dashboard span:last-child { 
+    background-color: #ab4;
+    padding: 2px 6px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-size: .75rem;
+}
+
+.sidebar-bottom {
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar-bottom h4 { 
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    border-bottom: 1px solid #ab4;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+/* NavLink */
+.menu-item {
+    -webkit-display: flex;
+    display: flex;
+    padding: 20px 18px;
+    color: #fff;
+    text-decoration: none;
+    font-size: .75rem;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.menu-item:hover {
+    color: #fff;
+}
+
+.menu-item.active {
+    color: #ab4 !important;
+}
+
+.menu-item span {
+    margin-left: 30px;
+    margin-bottom: 5px;
+
+}
+
+.menu-item i {
+    font-size: .85rem;
+}

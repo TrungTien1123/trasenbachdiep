@@ -1,0 +1,21 @@
+@import "https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css";
+
+*{
+    text-decoration: none;
+    list-style: none;
+    font-size: 18px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+    font-family: 'SVNAthena';
+  }
+.App {
+    padding-top: 0px;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+}

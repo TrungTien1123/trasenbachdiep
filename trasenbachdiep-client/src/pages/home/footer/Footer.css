@@ -1,0 +1,40 @@
+footer{
+    background-image: url(../../../images/Layout/Footer.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y:-425px ;
+    padding: 1.5rem;
+  }
+  .information{
+    width: 20%;
+  }
+  .information h4{
+    padding-top: .5rem;
+    text-align: center;
+    color: #60605d;
+    opacity: 100%;
+  }
+  .information a{
+    color: #60605d;
+    opacity: 100%;
+    margin: 0;
+    text-decoration: None;
+  }
+  .information p{
+    margin-bottom: 0;
+  }
+  .nav-bottom{
+    padding-left: 2.5rem;
+  }
+  .icon{
+    color: #60605d;
+    width: 30%;
+    padding: 0.25rem;
+    font-size: 2rem;
+  }
+  .blur {
+    color: rgb(161, 153, 153);
+    opacity: 100%;
+  }
+  
+  

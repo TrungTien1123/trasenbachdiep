@@ -1,0 +1,30 @@
+2024-04-24 01:32:31 [background-preinit] INFO  o.h.v.i.u.Version                                  - HV000001: Hibernate Validator 6.2.5.Final 
+2024-04-24 01:32:31 [main] INFO  v.c.t.m.ManagementApplication                      - Starting ManagementApplication using Java 1.8.0_402 on Trung-Tiens-MacBook-Pro.local with PID 48023 (/Users/trungtien/Desktop/trasenbachdiep/target/classes started by trungtien in /Users/trungtien/Desktop/trasenbachdiep) 
+2024-04-24 01:32:31 [main] INFO  v.c.t.m.ManagementApplication                      - No active profile set, falling back to 1 default profile: "default" 
+2024-04-24 01:32:31 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+2024-04-24 01:32:31 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Finished Spring Data repository scanning in 45 ms. Found 20 JPA repository interfaces. 
+2024-04-24 01:32:32 [main] INFO  o.s.b.w.e.t.TomcatWebServer                        - Tomcat initialized with port(s): 8888 (http) 
+2024-04-24 01:32:32 [main] INFO  o.a.c.h.Http11NioProtocol                          - Initializing ProtocolHandler ["http-nio-8888"] 
+2024-04-24 01:32:32 [main] INFO  o.a.c.c.StandardService                            - Starting service [Tomcat] 
+2024-04-24 01:32:32 [main] INFO  o.a.c.c.StandardEngine                             - Starting Servlet engine: [Apache Tomcat/9.0.75] 
+2024-04-24 01:32:32 [main] INFO  o.a.c.c.C.[.[.[/]                                  - Initializing Spring embedded WebApplicationContext 
+2024-04-24 01:32:32 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext     - Root WebApplicationContext: initialization completed in 760 ms 
+2024-04-24 01:32:32 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+2024-04-24 01:32:32 [main] INFO  o.h.j.i.u.LogHelper                                - HHH000204: Processing PersistenceUnitInfo [name: default] 
+2024-04-24 01:32:32 [main] INFO  o.h.Version                                        - HHH000412: Hibernate ORM core version 5.6.15.Final 
+2024-04-24 01:32:32 [main] INFO  o.h.a.c.Version                                    - HCANN000001: Hibernate Commons Annotations {5.1.2.Final} 
+2024-04-24 01:32:32 [main] INFO  c.z.h.HikariDataSource                             - HikariPool-1 - Starting... 
+2024-04-24 01:32:32 [main] INFO  c.z.h.HikariDataSource                             - HikariPool-1 - Start completed. 
+2024-04-24 01:32:32 [main] INFO  o.h.d.Dialect                                      - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect 
+2024-04-24 01:32:33 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator                 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform] 
+2024-04-24 01:32:33 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     - Initialized JPA EntityManagerFactory for persistence unit 'default' 
+2024-04-24 01:32:33 [main] INFO  o.s.s.w.DefaultSecurityFilterChain                 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@60ee7a51, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@70e1aa20, org.springframework.security.web.context.SecurityContextPersistenceFilter@2a16d393, org.springframework.security.web.header.HeaderWriterFilter@7535f28, org.springframework.web.filter.CorsFilter@e67d3b7, org.springframework.security.web.authentication.logout.LogoutFilter@62dc1203, vn.com.trungtien.management.configuration.security.AuthTokenFilter@16d4024e, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@62f37bfd, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@414e8b31, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@14499b52, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1618c98a, org.springframework.security.web.session.SessionManagementFilter@378c48c1, org.springframework.security.web.access.ExceptionTranslationFilter@2cacd55e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5790cbcb] 
+2024-04-24 01:32:34 [main] INFO  o.a.c.h.Http11NioProtocol                          - Starting ProtocolHandler ["http-nio-8888"] 
+2024-04-24 01:32:34 [main] INFO  o.s.b.w.e.t.TomcatWebServer                        - Tomcat started on port(s): 8888 (http) with context path '' 
+2024-04-24 01:32:34 [main] INFO  v.c.t.m.ManagementApplication                      - Started ManagementApplication in 3.04 seconds (JVM running for 3.643) 
+2024-04-24 01:32:36 [http-nio-8888-exec-1] INFO  o.a.c.c.C.[.[.[/]                                  - Initializing Spring DispatcherServlet 'dispatcherServlet' 
+2024-04-24 01:32:36 [http-nio-8888-exec-1] INFO  o.s.w.s.DispatcherServlet                          - Initializing Servlet 'dispatcherServlet' 
+2024-04-24 01:32:36 [http-nio-8888-exec-1] INFO  o.s.w.s.DispatcherServlet                          - Completed initialization in 1 ms 
+2024-04-24 02:37:19 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     - Closing JPA EntityManagerFactory for persistence unit 'default' 
+2024-04-24 02:37:19 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource                             - HikariPool-1 - Shutdown initiated... 
+2024-04-24 02:37:19 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource                             - HikariPool-1 - Shutdown completed. 
