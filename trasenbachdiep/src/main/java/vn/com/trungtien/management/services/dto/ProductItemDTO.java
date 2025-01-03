@@ -16,7 +16,7 @@ import java.util.List;
 public class ProductItemDTO implements Serializable {
     Long id;
 
-    Product product;
+    String productName;
     @Size(max = 20)
     String sku;
     Long qtyInStock;

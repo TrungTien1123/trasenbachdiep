@@ -1,8 +1,8 @@
 import CartItem from './CartItem'
 import "./Cart.css"
 import{connect} from 'react-redux'
-import viewActions from '../../../../redux/actions/viewActions'
-import cartActions from '../../../../redux/actions/cartActions';
+import viewActions from '../../redux/actions/viewActions'
+import cartActions from '../../redux/actions/cartActions';
 import { useEffect } from 'react';
 
 function Cart(props){

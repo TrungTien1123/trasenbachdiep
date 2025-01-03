@@ -13,8 +13,8 @@ import ActiveAccount from "./pages/signup/active_account/ActiveAccount";
 import HomePage from "./pages/home/HomePage";
 import UserInfo from "./pages/home/userinfo/UserInfo";
 import PasswordChanging from "./pages/home/password changing/PasswordChanging";
-import ListProducts from "./pages/home/list_products/ListProducts";
-
+import ProductList from "./components/ProductManagement/ProductList"
+import Cart from "./pages/cart/Cart";
 
 
 const routers = createBrowserRouter([
@@ -31,6 +31,7 @@ const routers = createBrowserRouter([
         path:"/active_account",
         element: <ActiveAccount/>
     },
+    // /:productId
     {
         path:"/",
         element:<App/>,
@@ -55,6 +56,10 @@ const routers = createBrowserRouter([
                 path:"/contact",
                 element:<Contact/>
             },
+            {
+                path:"/cart",
+                element:<Cart/>
+            },
         ]
     },
     {
@@ -67,7 +72,7 @@ const routers = createBrowserRouter([
             },
             {
                 path:"/dashboard/list-products",
-                element:<ListProducts/>
+                element:<ProductList/>
             },
             {
                 path:"/dashboard/password-changing",

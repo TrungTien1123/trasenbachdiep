@@ -17,6 +17,7 @@ import java.util.List;
 public class Product extends AbstractAuditingEntity {
     @Id
     @Column(name = "id", nullable = false)
+    @GeneratedValue
     private Long id;
 
     @Size(max = 500)
@@ -35,7 +36,14 @@ public class Product extends AbstractAuditingEntity {
     @JoinColumn(name="category_id", referencedColumnName = "id")
     private ProductCategory category;
 
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name="supplier_id", referencedColumnName = "id")
+    private Supplier supplier;
+
     @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
     @ManyToMany(mappedBy = "has", fetch=FetchType.EAGER )
     List<Promotion> hasPromotions;
+
+    @OneToMany(mappedBy = "product", cascade = {CascadeType.REMOVE, CascadeType.MERGE})
+    private List<ProductItem> productItems;
 }

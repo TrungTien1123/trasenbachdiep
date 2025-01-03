@@ -15,7 +15,7 @@ import Settings from './pages/home/settings/Settings';
 import UserInfo from './pages/home/userinfo/UserInfo';
 import Header from './pages/home/header/Header';
 import Footer from './pages/home/footer/Footer';
-import Cart from './pages/products/components/cart/Cart';
+import Cart from './pages/cart/Cart';
 
 const SignupWithLoading = WithLoading(Signup);
 const SigninWithLoading = WithLoading(Signin);
@@ -25,7 +25,7 @@ const ListGroupsWithLoading = WithLoading(ListGroups)
 const SettingsWithLoading = WithLoading(Settings)
 const PasswordChangingWithLoading = WithLoading(PasswordChanging)
 
-function App() {
+const App = () => {
 
     const isLoggedIn = localStorage.getItem('login')
 

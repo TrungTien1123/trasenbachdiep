@@ -83,6 +83,9 @@ const productReducer = (state = initState, action) => {
         ...state,
         isLoading: false
       }
+
+
+      
       //GET LIST PRODUCT ITEM
       case actionTypes.GET_LIST_PRODUCT_ITEMS_REQUEST:
         return {

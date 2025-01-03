@@ -89,7 +89,9 @@ const Header = (props) => {
                             dropdownIsOpen && <Dropdown setDropdownClose={handleClickOutSideDropdown}/>
                         }
             </div>
+            {/*  */}
         </header> 
+
     )
 }
 

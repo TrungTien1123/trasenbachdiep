@@ -1,4 +1,4 @@
-import cartActions from "../../../../redux/actions/cartActions";
+import cartActions from "../../redux/actions/cartActions";
 // import { addMore } from "../../redux/reduxModules";
 import { connect } from "react-redux";
 
@@ -19,7 +19,7 @@ function CartItem(props) {
             </div>
             <div className="cartItem-box">
                 <div className="cartItem-boxInfo">
-                    <h3 className="cartItem-infoName">{cartItem.productItem.product.name}</h3>
+                    <h3 className="cartItem-infoName">{cartItem.productItem.productName}</h3>
                     <div className="cartItem-infoPrice">
                         <p className="cartItem-newPrice">{cartItem.productItem.price}đ</p>
     

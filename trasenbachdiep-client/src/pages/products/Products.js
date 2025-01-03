@@ -3,7 +3,7 @@ import ProductLeft from "./components/productLeft"
 import ProductRight from "./components/productRight";
 import './sanpham.css'
 // import './Sanpham-Responsive.css'
-import Cart from "./components/cart/Cart"
+import Cart from "../cart/Cart"
 
 function Products(){
     return(

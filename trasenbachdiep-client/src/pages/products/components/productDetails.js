@@ -19,7 +19,7 @@ function productDetails(props){
             </div>
             <div className="detail">
                 <button /*onClick={()=>addToCart(productItem)}*/>Thêm vào giỏ</button>
-                <h4 className="text-center">{productItem.product.name}</h4>
+                <h4 className="text-center">{productItem.productName}</h4>
                 <div className="product-information d-flex justify-content-center">
                     <div className="price d-flex">
                     <h4>{productItem.price}</h4><span className="currency-unit">VND</span>

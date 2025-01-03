@@ -37,9 +37,12 @@ public class ProductItemService implements IProductItemService {
         return mapper.toDTO(repository.findById(id).orElse(null));
     }
     public void create(ProductItemCreateForm form){
+        System.out.println("Create new product:" + modelMapper.map(form, ProductItem.class) + "ProductId =" + modelMapper.map(form, ProductItem.class).getProduct().getId());
         repository.save(modelMapper.map(form, ProductItem.class));
     }
     public void update(ProductItemUpdateForm form){
+        System.out.println("Update product:" + modelMapper.map(form, ProductItem.class) + "ProductId =" + modelMapper.map(form, ProductItem.class).getProduct().getId());
+
         repository.save(modelMapper.map(form, ProductItem.class));
     }
     public void deleteById(Long id){

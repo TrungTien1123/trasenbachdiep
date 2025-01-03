@@ -1,6 +1,7 @@
 package vn.com.trungtien.management.resources;
 
 import lombok.RequiredArgsConstructor;
+import lombok.ToString;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.validation.annotation.Validated;
@@ -16,6 +17,7 @@ import javax.validation.Valid;
 @RequiredArgsConstructor
 @RequestMapping("api/product")
 @Validated
+@ToString
 public class ProductController {
     private final ProductService service;
     @GetMapping()

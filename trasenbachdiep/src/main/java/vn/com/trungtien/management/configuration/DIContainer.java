@@ -8,6 +8,12 @@ import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.JavaMailSenderImpl;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
+import vn.com.trungtien.management.domains.entities.Product;
+import vn.com.trungtien.management.domains.entities.ProductItem;
+import vn.com.trungtien.management.form.ProductCreateForm;
+import vn.com.trungtien.management.form.ProductItemCreateForm;
+import vn.com.trungtien.management.form.ProductItemUpdateForm;
+import vn.com.trungtien.management.form.ProductUpdateForm;
 
 @Configuration
 public class DIContainer {
@@ -16,9 +22,14 @@ public class DIContainer {
         ModelMapper modelMapper = new ModelMapper();
         modelMapper.getConfiguration()
                 .setMatchingStrategy(MatchingStrategies.STANDARD);
-//        modelMapper.typeMap(StudentCreateForm.class, Student.class)
-//                .addMappings(mapper -> mapper.<Long>map(StudentCreateForm::getDepartmentId,(des,id) ->des.getDepartment().setId(id)))
-//                .addMappings(mapper -> mapper.skip(Student::setId));
+        modelMapper.typeMap(ProductItemCreateForm.class, ProductItem.class)
+                .addMappings(mapper -> mapper.<Long>map(ProductItemCreateForm::getProductId,(des,id) ->des.getProduct().setId(id)))
+                .addMappings(mapper -> mapper.skip(ProductItem::setId));
+        modelMapper.typeMap(ProductItemUpdateForm.class, ProductItem.class)
+                .addMappings(mapper -> mapper.<Long>map(ProductItemUpdateForm::getProductId,(des,id) ->des.getProduct().setId(id)));
+        modelMapper.typeMap(ProductCreateForm.class, Product.class)
+                .addMappings(mapper -> mapper.skip(Product::setId));
+//                .addMappings(mapper -> mapper.skip(Product::setId));
 //        modelMapper.typeMap(UserCreateForm.class, User.class)
 //                .addMappings(mapper -> mapper.skip(User::setId));
 //                .addMappings(mapper -> mapper.<Long>map(UserCreateForm::getBuildingId,(des,id) ->des.getBuilding().setId(id)));

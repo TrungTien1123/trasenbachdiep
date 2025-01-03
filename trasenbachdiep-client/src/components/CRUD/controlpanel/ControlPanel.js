@@ -2,7 +2,7 @@ import React from 'react'
 
 const ControlPanel = (props) => {
     const _add = () =>{
-
+        props.add()
     }
     const _refresh = () =>{
         

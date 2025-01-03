@@ -9,14 +9,16 @@ import javax.validation.constraints.Size;
 @Getter
 @Setter
 public class ProductItemUpdateForm {
-    @NotNull(message = "Id không thể để trống" )
-    Long id;
 
-    Product product;
+    private Long id;
+
+    private Long productId;
+
     @Size(max = 20)
-    String sku;
-    Long qtyInStock;
+    private String sku;
 
-    Long price;
+    private Long qtyInStock;
+
+    private Long price;
 
 }

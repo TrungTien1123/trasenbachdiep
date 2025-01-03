@@ -36,7 +36,7 @@ public class ProductItemController {
     }
 
     @PutMapping("/{id}")
-    public void update(@Valid @PathVariable Long id,@Valid @RequestBody ProductItemUpdateForm form){
+    public void update(@Valid @PathVariable("id") Long id,@Valid @RequestBody ProductItemUpdateForm form){
         form.setId(id);
         service.update(form);
     }

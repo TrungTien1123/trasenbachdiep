@@ -15,9 +15,11 @@ import java.util.Set;
 @Entity
 @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 @Table(name = "product_item")
+@ToString
 public class ProductItem extends AbstractAuditingEntity {
     @Id
     @Column(name = "id", nullable = false)
+    @GeneratedValue
     private Long id;
 
     @Size(max = 20)
@@ -42,6 +44,6 @@ public class ProductItem extends AbstractAuditingEntity {
     List<VariationOption> hasVariationOptions;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "product_id")
+    @JoinColumn(name = "product_id", referencedColumnName = "id")
     private Product product;
 }

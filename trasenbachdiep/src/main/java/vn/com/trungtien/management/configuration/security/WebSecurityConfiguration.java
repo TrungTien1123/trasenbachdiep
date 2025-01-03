@@ -56,7 +56,7 @@ public class WebSecurityConfiguration extends WebSecurityConfigurerAdapter {
 				.antMatchers("/api/product-item/**").permitAll()
 				.antMatchers("/api/cart/**").permitAll()
 				.antMatchers("/api/groups/**").hasAnyAuthority("ADMIN")
-		.anyRequest().authenticated()
+				.antMatchers("/api/files/image").permitAll()
 		.and()
 		.exceptionHandling().authenticationEntryPoint(authEntryPoint)
 		.and()

@@ -39,9 +39,6 @@ public class ShoppingCartService {
 
         ShoppingCart shoppingCart = shoppingCartRepository.findByAccount(account);
 
-
-
-
         ShoppingCartItem shoppingCartItem = shoppingCartItemRepository.findByCartAndProductItem( shoppingCart , productItem);
 
         if (shoppingCartItem !=null){

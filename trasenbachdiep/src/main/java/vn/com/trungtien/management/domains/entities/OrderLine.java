@@ -29,4 +29,8 @@ public class OrderLine {
     @Column(name = "price")
     private Long price;
 
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "warehouse_id")
+    private Warehouse warehouse;
+
 }
